@@ -104,3 +104,400 @@ h1 {
   }
 </style>
 
+<!--
+  Set the Font Family of an Element
+
+You can set which font an element should use, by using the font-family property.
+
+For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS:
+
+h2 {
+  font-family: sans-serif;
+}
+-->
+<style>
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+</style>
+
+<!--
+  Import a Google Font
+
+In addition to specifying common fonts that are found on most operating systems, we can also specify non-standard, custom web fonts for use on our website. There are many sources for web fonts on the Internet. For this example we will focus on the Google Fonts library.
+
+Google Fonts is a free library of web fonts that you can use in your CSS by referencing the font's URL.
+
+So, let's go ahead and import and apply a Google font (note that if Google is blocked in your country, you will need to skip this challenge).
+
+To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge, we'll import the Lobster font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening style element):
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:
+
+font-family: FAMILY_NAME, GENERIC_NAME;
+
+The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available. This is covered in the next challenge.
+
+Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+h2 {
+  font-family: Lobster;
+}
+
+<!--
+  Specify How Fonts Should Degrade
+
+There are several default fonts that are available in all browsers. These generic font families include monospace, serif and sans-serif.
+
+When one font isn't available, you can tell the browser to "degrade" to another font.
+
+For example, if you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica isn't available, you will specify it as follows:
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+
+Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords
+-->
+
+h2 {
+  font-family: Lobster, monospace;
+}
+
+<!--
+Size Your Images
+
+CSS has a property called width that controls an element's width. Just like with fonts, we'll use px (pixels) to specify the image's width.
+
+For example, if we wanted to create a CSS class called larger-image that gave HTML elements a width of 500 pixels, we'd use:
+
+<style>
+  .larger-image {
+    width: 500px;
+  }
+</style>
+
+Create a class called smaller-image and use it to resize the image so that it's only 100 pixels wide.
+-->
+
+.smaller-image{
+  width: 100px;
+}
+
+<a href="#"><img class="smaller-image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+<!--
+  Add Borders Around Your Elements
+
+CSS borders have properties like style, color and width.
+
+For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:
+
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+-->
+.thick-green-border{
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+}
+
+<a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+<!--
+  Add Rounded Corners with border-radius
+
+Your cat photo currently has sharp corners. We can round out those corners with a CSS property called border-radius.
+-->
+.thick-green-border {
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+<!--
+  Make Circular Images with a border-radius
+
+In addition to pixels, you can also specify the border-radius using a percentage.
+-->
+
+.thick-green-border {
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+<!--
+  Give a Background Color to a div Element
+
+You can set an element's background color with the background-color property.
+
+For example, if you wanted an element's background color to be green, you'd put this within your style element:
+
+.green-background {
+  background-color: green;
+}
+-->
+
+.silver-background {
+  background-color: silver;
+}
+
+<div class="silver-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<!--
+  Set the id of an Element
+
+In addition to classes, each HTML element can also have an id attribute.
+
+There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.
+
+id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same id attribute.
+
+Here's an example of how you give your h2 element the id of cat-photo-app:
+
+<h2 id="cat-photo-app">
+-->
+
+<form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label><br>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+<!--
+  Use an id Attribute to Style an Element
+
+One cool thing about id attributes is that, like classes, you can style them using CSS.
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
+
+Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the background color of green. In your style element:
+
+#cat-photo-element {
+  background-color: green;
+}
+
+Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
+-->
+
+#cat-photo-form {
+  background-color: green;
+}
+
+<!--
+  Adjust the Padding of an Element
+
+Now let's put our Cat Photo App away for a little while and learn more about styling HTML.
+
+You may have already noticed this, but all HTML elements are essentially little rectangles.
+
+Three important properties control the space that surrounds each HTML element: padding, border, and margin.
+
+An element's padding controls the amount of space between the element's content and its border.
+
+Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more padding than the blue box.
+
+When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
+-->
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+<!--
+  Adjust the Margin of an Element
+
+An element's margin controls the amount of space between an element's border and surrounding elements.
+
+Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has a bigger margin than the blue box, making it appear smaller.
+
+When you increase the blue box's margin, it will increase the distance between its border and surrounding elements.
+-->
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+
+<!--Add a Negative Margin to an Element
+
+An element's margin controls the amount of space between an element's border and surrounding elements.
+
+If you set an element's margin to a negative value, the element will grow larger.
+-->
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+  }
+</style>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+<!--
+Add Different Padding to Each Side of an Element
+
+Sometimes you will want to customize an element so that it has different amounts of padding on each of its sides.
+
+CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties.
+-->
+
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+<!--
+  Add Different Margins to Each Side of an Element
+
+Sometimes you will want to customize an element so that it has a different margin on each of its sides.
+
+CSS allows you to control the margin of all four individual sides of an element with the margin-top, margin-right, margin-bottom, and margin-left properties.
+
+-->
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+
