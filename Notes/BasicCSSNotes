@@ -47,7 +47,7 @@ Note that it's important to have both opening and closing curly braces ({ and })
   h2 {
     color: blue;
   }
-  </style>
+</style>
   
 
 <!--
