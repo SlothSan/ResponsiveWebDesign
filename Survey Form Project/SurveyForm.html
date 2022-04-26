@@ -1,0 +1,183 @@
+<!--
+Survey Form for Eunomia R&C
+Author : Mike O 
+Date : 26/04/22
+-->
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="./styles.css"/> 
+        </head>
+        <main id="main" class="container">
+            <h1 id="title">Eunomia Research & Consulting after service survey</h1>
+            <p id="description">Please take the time to fill in the below survey, this will help us improve the service we offer to all of our clients. Thank you !</p>
+        </main>
+        <body>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="name"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />               
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        name="email"
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your email address"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Project Number<span class="optional">(optional please provide if known)</span></label>
+                    <input
+                        pattern="/d*"
+                        name="projectnumber"
+                        type="number"
+                        id="number"
+                        max="10000"
+                        min="0"
+                        class="form-control"
+                        placeholder="Project number"
+                    />
+                </div>
+                <div class="form-group">
+                    <p>Which service did you use from Eunomia Research & Consulting</p>
+                    <select id="dropdown" name="service" class="form-control" required>
+                        <option disabled selected value>Choose a service</option>
+                        <option value="Local Environment">Local Environment</option>
+                        <option value="Policy">Policy</option>
+                        <option value="Sustainable Business">Sustainable Business</option>
+                        <option value="Finance & Investment">Finance & Investment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How was our services ?</p>
+                    <label id="service-label" for="service">Very good</label>
+                    <input
+                    id="very-good"
+                    type="radio"
+                    name="servicequestion"
+                    class="input-radio"
+                    value="very good"
+                    />
+                    <label id="service-label" for="service">Good</label>
+                    <input
+                    id="good"
+                    type="radio"
+                    name="servicequestion"
+                    class="input-radio"
+                    value="good"
+                    />
+                    <label id="service-label" for="service">Okay</label>
+                    <input
+                    id="okay"
+                    type="radio"
+                    name="servicequestion"
+                    class="input-radio"
+                    value="okay"
+                    />
+                    <label id="service-label" for="service">Poor</label>
+                    <input
+                    id="poor"
+                    type="radio"
+                    name="servicequestion"
+                    class="input-radio"
+                    value="poor"
+                    />
+                    <label id="service-label" for="service">Very poor</label>
+                    <input
+                    id="very-poor"
+                    type="radio"
+                    name="servicequestion"
+                    class="input-radio"
+                    value="very-poor"
+                    />
+                </div>
+                <div class="form-group">
+                    <p>What could we have done better ?<span>(Check all that apply)</span></p>
+                    <label id="improve-label" for="improve">
+                        <input
+                        id="speed"
+                        type="checkbox"
+                        name="speed"
+                        value="speed"
+                        class="input-checkbox"
+                        /> Speed
+                    </label>
+                    <label id="improve-label" for="improve">
+                        <input
+                        id="responsiveness"
+                        type="checkbox"
+                        name="responsiveness"
+                        value="responsiveness"
+                        class="input-checkbox"
+                        /> Responsiveness
+                    </label>
+                    <label id="improve-label" for="improve">
+                        <input
+                        id="cost"
+                        type="checkbox"
+                        name="cost"
+                        value="cost"
+                        class="input-checkbox"
+                        /> Cost
+                    </label>
+                    <label id="improve-label" for="improve">
+                        <input
+                        id="environmental advice"
+                        type="checkbox"
+                        name="environmental advice"
+                        value="environmental advice"
+                        class="input-checkbox"
+                        /> Environmental Advice
+                    </label>
+                    <label id="improve-label" for="improve">
+                        <input
+                        id="transparency"
+                        type="checkbox"
+                        name="transparency"
+                        value="transparency"
+                        class="input-checkbox"
+                        /> Transparency
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend our service ?</p>
+                    <label id="recommened-label" for="recommened">
+                        <input
+                        id="yes"
+                        type="radio"
+                        name="recommended"
+                        value="yes"
+                        class="input-radio"
+                        />Yes
+                    </label>
+                    <label id="recommened-label" for="recommened">
+                        <input
+                        id="no"
+                        type="radio"
+                        name="recommended"
+                        value="no"
+                        class="input-radio"
+                        />No
+                    </label>
+
+
+                   
+
+                </div>
+            </form>
+        </body>
+    </html>
