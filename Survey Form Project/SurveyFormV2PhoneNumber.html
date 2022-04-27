@@ -1,0 +1,80 @@
+<!--
+Survey Form for 
+Author : Mike O 
+Date : 26/04/22
+-->
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>International telephone input</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="stylesheet" href="styles.css" />
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+            />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="./styles.css"/> 
+        </head>
+        <main id="main" class="container">
+            <h1 id="title">Eunomia Research & Consulting after service survey</h1>
+            <p id="description">Please take the time to fill in the below survey, this will help us improve the service we offer to all of our clients. Thank you !</p>
+        </main>
+        <body>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="label-name" for="name">Name</label>
+                    <input
+                        type="name"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                    <br>
+                    <br>                   
+                </div>
+                <div class="form-group">
+                    <label id="label-email" for="email">Email</label>
+                    <input
+                        name="email"
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your email address"
+                        required
+                    />
+                    <br>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label id="label-phonenumber" for="number">Phone Number</label>
+                    <input
+                    name="phone"
+                    type="tel"
+                    id="phone"
+                    class="form-control"
+                    placeholder="Enter your phone number"
+                    required
+                    />
+                    <input type="submit" class="btn" value="Verify" />
+                    </br>
+                    </br>
+                </div>
+
+
+                </div>
+            </form>
+            <script>
+                const phoneInputField = document.querySelector("#phone");
+                const phoneInput = window.intlTelInput(phoneInputField, {
+                  utilsScript:
+                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+                });
+              </script>
+        </body>
+    </html>
