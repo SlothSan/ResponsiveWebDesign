@@ -10,7 +10,7 @@
         <title>Survey Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8">
-        <!--Add DM Serfif Font from Google Fonts-->
+        <!--Add DM Serif Font from Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato&display=swap" rel="stylesheet">
@@ -23,9 +23,9 @@
         </div>
     <form id="survey-form">
         <fieldset>
-            <label id="name-label">Enter Your Full Name: <input type="text" id="name"  required placeholder="Please Enter Your Full Name..." value="full-name"/></label>
-            <label id="email-label">Enter Your Email Address: <input type="email" id="email"   required placeholder="Please Enter Your Full Email Address..." value="email-address"/></label>
-            <label id="number-label">Enter Your Project Number: <input type="number" id="number" min="1" max="10000"  required placeholder="Please Enter Your Project Number..." value="project-number" /></label>
+            <label id="name-label">Enter Your Full Name: <input type="text" id="name" required placeholder="Please Enter Your Full Name..."/></label>
+            <label id="email-label">Enter Your Email Address: <input type="email" id="email" required placeholder="Please Enter Your Full Email Address..."/></label>
+            <label id="number-label">Enter Your Project Number: <input type="number" id="number" min="1" max="10000" required placeholder="Please Enter Your Project Number..."/></label>
         </fieldset>
         <fieldset>
         <label id="service-label">Which Service Did You Use At Eunomia Research & Consulting ?
@@ -61,7 +61,7 @@
             <textarea placeholder="Enter Any Comments Or Suggestions Here..." value="comments" form="survey-form"></textarea>
         </label>
         </fieldset>
-        <button type="submit" value="submit">Submit !</button>
+        <button type="submit" value="submit" id="submit">Submit !</button>
     </form>
     </body>
 </html>
