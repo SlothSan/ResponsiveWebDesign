@@ -1,0 +1,67 @@
+<!--
+    Survey Form V3
+    Author: Mike O
+    Date: 28/04/22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <!--Add DM Serfif Font from Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Eunomia Research & Consulting Survey</h1>
+            <p id="description">Please take the time to fill in the below survey, this will help us improve the services we offer to all of our clients. Thank you !</p>
+        </div>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter Your Full Name: <input type="text" id="name"  required placeholder="Please Enter Your Full Name..." value="full-name"/></label>
+            <label id="email-label">Enter Your Email Address: <input type="email" id="email"   required placeholder="Please Enter Your Full Email Address..." value="email-address"/></label>
+            <label id="number-label">Enter Your Project Number: <input type="number" id="number" min="1" max="10000"  required placeholder="Please Enter Your Project Number..." value="project-number" /></label>
+        </fieldset>
+        <fieldset>
+        <label id="service-label">Which Service Did You Use At Eunomia Research & Consulting ?
+            <select id="dropdown" for="service">
+                <option  disabled selected>Choose a Service</option>
+                <option  value="local-environment">Local Environment</option>
+                <option  value="policy">Policy</option>
+                <option  value="sustainable business">Sustainable Business</option>
+                <option  value="finance & investment">Finance & Investment</option>
+            </select>
+        </label>
+        <label id="service-level-label">How Was Our Service ?
+                <label>Very Good<input type="radio" value="very-good" name="service" /></label>
+                <label>Good<input type="radio" value="good" name="service" /></label>
+                <label>Okay<input type="radio" value="okay" name="service" /></label>
+                <label>Poor<input type="radio" value="poor" name="service" /></label>
+                <label>Very Poor<input type="radio" value="very-poor" name="service" /></label>
+        </label>
+        <label id="improve-label">What Could We Have Done Better ?
+                <label>Speed<input type="checkbox" value="speed"/></label>
+                <label>Responsiveness<input type="checkbox" value="responsiveness"/></label>
+                <label>Cost<input type="checkbox" value="cost"/></label>
+                <label>Environmental Advice<input type="checkbox" value="environmental-advice"/></label>
+                <label>Transparency<input type="checkbox" value="transparency"/></label>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label id="recommend-label">Would You Recommended Our Services ?
+            <label>Yes<input type="radio" value="yes" name="recommend"/></label>
+            <label>No<input type="radio" value="no" name="recommend" /></label>
+        </label>
+        <label id="comments-label"> Any Further Comments Or Suggestions ?
+            <textarea placeholder="Enter Any Comments Or Suggestions Here..." value="comments" form="survey-form"></textarea>
+        </label>
+        </fieldset>
+        <button type="submit" value="submit">Submit !</button>
+    </form>
+    </body>
+</html>
