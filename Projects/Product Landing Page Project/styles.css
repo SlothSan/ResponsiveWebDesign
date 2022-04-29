@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     background-color: #ffffff;
     display: flex;
     height: 125px;
@@ -29,9 +29,9 @@ header {
 }
 
 #header-img {
-    max-width: 33.3%;
+    max-width: 33vw;
     max-height: 125px;
-    width: auto;
+    width: 33vw;
     height: auto;
     margin-bottom: 3px;
 }
@@ -49,9 +49,8 @@ h2 {
 }
 
   nav {
-    width: 33.3%;
-    max-width: 20%;
-    height: 100%;
+    width: 33vw;
+    max-width: 33vw;
     max-height: 125px;
   }
   
