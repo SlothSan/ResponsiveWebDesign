@@ -1,51 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-        <title>Product Landing Page Project</title>
-        <link rel="stylesheet" type="text/css" href=".styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="page-container">
-            <header id="header">
-                <div class="logo-container">
-                    <!--SRC = 500x500px-->
-                    <img
-                    id="header-img"
-                    src="https://i.imgur.com/UgJiOCZ.jpg"
-                    alt="Solar Tribune Company Logo"
-                    />
-                </div>
-                <div class="title-container">
-                    <h1>Solar Tribune</h1>
-                    <h2>Solar Panels & Installations</h2>
-                </div>
-                <nav id="nav-bar">
-                    <ul class="nav-list">
-                        <li class="nav-link"><a href="#" accesskey="">placeholder</a></li>
-                        <li class="nav-link"><a href="#" accesskey="">placeholder</a></li>                    
-                        <li class="nav-link"><a href="#" accesskey="">placeholder</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container"></div>
-            <section id="customer-email">
-                <h2>Solar Panels, for your home.</h2>
-                <form id="form" action="">
-                    <input
-                    name="email"
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email address"
-                    required
-                    />
-                    <input id="submit" type="submit" value="Get Solar Panels" class="button" />
-                </form>
-            </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  <title>Product Landing Page Project</title>
+  <link rel="stylesheet" type="text/css" href=".styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--Get Icons from Font Awesome Pack-->
+  <script src="https://kit.fontawesome.com/3824660a61.js" crossorigin="anonymous"></script>
+  <!--Solar Panel
+        <i class="fa-solid fa-solar-panel"></i>
+        Wrench
+        <i class="fa-solid fa-wrench"></i>
+        Leaf
+        <i class="fa-solid fa-leaf"></i>
+        -->
+</head>
+
+<body>
+  <div class="page-container">
+    <header id="header">
+      <div class="logo-container">
+        <!--SRC = 500x500px-->
+        <img id="header-img" src="https://i.imgur.com/UgJiOCZ.jpg" alt="Solar Tribune Company Logo" />
+      </div>
+      <div class="title-container">
+        <h1>Solar Tribune</h1>
+        <h2>Solar Panels & Installations</h2>
+      </div>
+      <nav id="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-link"><a class="a-nav" href="#panel-features" accesskey="p">Solar Panel Features</a></li>
+          <li class="nav-link"><a class="a-nav" href="#" accesskey="">placeholder</a></li>
+          <li class="nav-link"><a class="a-nav" href="#" accesskey="">placeholder</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container"></div>
+    <section id="customer-email">
+      <h2>Solar Panels, for your home.</h2>
+      <form id="form" action="">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+        <input id="submit" type="submit" value="Get Solar Panels" class="button" />
+      </form>
+    </section>
+
+    <div class="container">
+      <section id="panel-features">
+        <div class="grid-layout">
+          <div class="icon"><i class="fa-solid fa-solar-panel fa-2xl"></i></div>
+          <div class="description">
+            <h2>Solar Panels</h2>
+            <p>
+              Our Solar Panels are the latest specification and provide the highest performance and efficiency on the market.
+            </p>
+          </div>
         </div>
-    </body>
+        <div class="grid-layout">
+          <div class="icon"><i class="fa-solid fa-wrench fa-2xl"></i></div>
+          <div class="description">
+            <h2>Installations</h2>
+            <p>
+              Our fitters are trained to the highest standard and will be able to install your panels safely and quickly at your home.
+            </p>
+          </div>
+        </div>
+        <div class="grid-layout">
+          <div class="icon"><i class="fa-solid fa-leaf fa-2xl"></i></div>
+          <div class="description">
+            <h2>Clean Energy</h2>
+            <p>
+              Enjoy the power of the sun being used to generate energy for your home, whilst selling excess power back to the national grid !
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="solar-panel" id="freestanding">
+          <div class="product-title">Freestanding Solar Panels</div>
+          <h2>£5000</h2>
+          <ol>
+            <li>Freestanding solar panels</li>
+            <li>Perfect for large gardens</li>
+            <li>Multiple can be ordered & fitted</li>
+          </ol>
+          <button class="button">More Information</button>
+        </div>
+        <div class="solar-panel" id="freestanding">
+          <div class="product-title">Roof Solar Panels</div>
+          <h2>£10000</h2>
+          <ol>
+            <li>Fitted roof panels</li>
+            <li>Can fit any roof size & shape</li>
+            <li>Fitted by our expert fitters</li>
+          </ol>
+          <button class="button">More Information</button>
+        </div>
+        <div class="solar-panel" id="freestanding">
+          <div class="product-title">Combination</div>
+          <h2>£15000</h2>
+          <ol>
+            <li>Freestanding & Roof fitted panels</li>
+            <li>Can be customized to your needs</li>
+            <li>Fitted by our expert fitters</li>
+          </ol>
+          <button class="button">More Information</button>
+        </div>
+      </section>
+      <section id="SolarVideo">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/HciKU63dLtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+        <span>&copy; 2022 SolarTribune.co.uk</span>
+      </footer>
+    </div>
+
+  </div>
+</body>
+
 </html>
