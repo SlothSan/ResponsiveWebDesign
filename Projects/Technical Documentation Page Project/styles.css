@@ -1,0 +1,24 @@
+/*Declare Global Variables */
+/*Living Coral #FC766AFF & Pacific Coast #5B84B1FF */
+/*Sailor Blue (#00203FFF) and Mint (#ADEFD1FF) */
+
+:root {
+    --background-color: #5B84B1FF;
+    --font-color: #FC766AFF;
+}
+
+body {
+    min-width: 400px;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    line-height: 2;
+    font-family: ;
+
+}
+
+nav {
+    min-width: 200px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
