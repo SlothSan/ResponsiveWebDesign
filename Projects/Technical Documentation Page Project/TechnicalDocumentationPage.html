@@ -25,6 +25,7 @@
       <li><a class="nav-link" href=#Empty_elements>Empty elements</a></li>
       <li><a class="nav-link" href=#Anatomy_of_a_HTML_document>Anatomy of a HTML document</a></li>
       <li><a class="nav-link" href=#Images>Images</a></li>
+      <li><a class="nav-link" href=#Marking_up_text>Marking up text</a></li>
     </ul>
   </nav>
   <!--Nav Bar Ends Here-->
@@ -189,9 +190,29 @@
       </article>
   </section>
   <hr>
-  <section class="main-section" id="">
-    <header class="headline"></header>
+  <section class="main-section" id="Marking_up_text">
+    <header class="headline">Marking up text</header>
     <article>
+      <p>
+        This section will cover some of the essential HTML elements you'll use for marking up the text.
+      </p>
+      <h4>Headings</h4>
+      <p>
+        Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <code>&lt;h1> - &lt;h6></code>, although you'll commonly only use 3 to 4 at most:
+      </p>
+      <pre class="prettyprint code-block">
+        &lt;!-- 4 heading levels: -->
+        &lt;h1>My main title&lt;/h1>
+        &lt;h2>My top level heading&lt;/h2>
+        &lt;h3>My subheading&lt;/h3>
+        &lt;h4>My sub-subheading&lt;/h4>
+      </pre>
+      <div class="note-card">
+        <p>
+          <strong>Note</strong>
+          Anything in HTML between <code class="note-code">&lt;!--</code> and <code class="note-code">--></code> is an <strong>HTML comment</strong>. The browser ignores comments as it renders the code. In other words, they are not visible on the page - just in the code. HTML comments are a way for you to write helpful notes about your code or logic.
+        </p>
+      </div>
 
     </article>
 </section>
