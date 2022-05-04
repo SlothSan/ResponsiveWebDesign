@@ -157,15 +157,11 @@ section article {
   width: auto;
   border: 3px solid var(--font-color);
 }
-*/
+
 img {
   height: auto;
-  width: 50%;
+  width: auto;
   padding: 5px;
-}
-
-.alt-image {
- padding: 0;
 }
 
 .note-card {

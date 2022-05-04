@@ -29,6 +29,10 @@
       <li><a class="nav-link" href=#Headings>Headings</a></li>
       <li><a class="nav-link" href=#Paragraphs>Paragraphs</a></li>
       <li><a class="nav-link" href=#Lists>Lists</a></li>
+      <li><a class="nav-link" href=#Links>Links</a></li>
+      <li><a class="nav-link" href=#Lists>Lists</a></li>
+      <li><a class="nav-link" href=#Conclusion>Conclusion</a></li>
+      <li><a class="nav-link" href=#Reference>Reference</a></li>
     </ul>
   </nav>
   <!--Nav Bar Ends Here-->
@@ -123,7 +127,7 @@
         &lt;img src="images/firefox-icon.png" alt="My test image">
          </code>
          <p>
-         This contains two attributes, but there is no closing </img> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.
+         This contains two attributes, but there is no closing &lt;/img> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.
         </p>
 
 
@@ -270,29 +274,79 @@
         We could modify the markup to this
       </p>
       <pre class="prettyprint code-block">
-        <p>At Mozilla, we're a global community of</p>
-
-        <ul>
-          <li>technologists</li>
-          <li>thinkers</li>
-          <li>builders</li>
-        </ul>
-
-      <p>working together ... </p>
+        &lt;p>At Mozilla, we're a global community of&lt;/p>
+        &lt;ul>
+        &lt;li>technologists&lt;/li>
+        &lt;li>thinkers&lt;/li>
+        &lt;li>builders&lt;/li>
+        &lt;/ul>
+        &lt;p>working together ... &lt;/p>
       </pre>
-
-
+      <p>Try adding an ordered or unordered list to your example page.</p>
     </article>
+  </section>
+  <section class="main-section" id="Links">
+    <header class="headline">Links</header>
+    <article>
+      <p>
+        Links are very important — they are what makes the web a web! To add a link, we need to use a simple element - <code>&lt;a></code> - "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:
+      </p>
+      <ol>
+        <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
+        <li>Wrap the text in an <code>&lt;a></code> element, as shown below: 
+          <code class="prettyprint code-block">
+            &lt;a>Mozilla Manifesto&lt;/a>
+          </code>
+        </li>
+        <li>Give the <code>&lt;a></code> element an href attribute, as shown below: 
+          <code class="prettyprint code-block">
+            &lt;a href="">Mozilla Manifesto&lt;/a>
+          </code>
+        </li>
+        <li>Fill in the value of this attribute with the web address that you want the link to:
+          <code class="prettyprint code-block">
+            &lt;a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto&lt;/a>
+          </code>
+        </li>
+      </ol>
+      <p>
+        You might get unexpected results if you omit the <code>https://</code> or <code>http://</code> part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.
+      </p>
+      <div class="note-card">
+        <p>
+          <strong>Note: </strong>
+          <code class="note-code">href</code> might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for hypertext reference.
+        </p>
+      </div>
+      <p>
+        Add a link to your page now, if you haven't already done so.
+      </p>
+    </article>
+</section>
+<section class="main-section" id="Conclusion">
+  <header class="headline">Conclusion</header>
+  <article>
+    <p>
+      If you have followed all the instructions in this article, you should end up with a page that looks like the one below 
+    </p>
+    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/finished-test-page-small.png" alt="finished tutorial page" />
+  </article>
+</section>
+<section class="main-section" id="Reference">
+  <header class="headline">Reference</header>
+  <article>
+    <ul>
+      <li>
+        All the documentation in this page is taken from
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+          target="_blank"
+          >MDN</a
+        >
+      </li>
+    </ul>
+  </article>
 </section>   
-   <!--Template for Articles
-    <section class="main-section" id="">
-        <header class="headline"></header>
-        <article>
-
-        </article>
-    </section>
-    -->
-  </main>
+</main>
 </body>
-
 </html>
