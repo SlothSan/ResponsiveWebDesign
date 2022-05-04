@@ -155,6 +155,7 @@ section article {
   margin: 5px;
   border-radius: 10px;
   width: auto;
+  border: 3px solid var(--font-color);
 }
 */
 img {
@@ -164,8 +165,7 @@ img {
 }
 
 .alt-image {
- Height: auto;
-  width: 300px;
+ padding: 0;
 }
 
 .note-card {
