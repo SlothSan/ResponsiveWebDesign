@@ -24,6 +24,7 @@
       <li><a class="nav-link" href=#Nesting_elements>Nesting elements</a></li>
       <li><a class="nav-link" href=#Empty_elements>Empty elements</a></li>
       <li><a class="nav-link" href=#Anatomy_of_a_HTML_document>Anatomy of a HTML document</a></li>
+      <li><a class="nav-link" href=#Images>Images</a></li>
     </ul>
   </nav>
   <!--Nav Bar Ends Here-->
@@ -163,6 +164,19 @@
         <p>
           Let's turn our attention to the <code>&lt;img></code> element again:
         </p>
+        <code class="prettyprint code-block">
+          &lt;img src="images/firefox-icon.png" alt="My test image">
+        </code>
+        <p>
+          As we said before, it embeds an image into our page in the position it appears. It does this via the <code>src</code> (source) attribute, which contains the path to our image file.
+        </p>
+        <p>
+          We have also included an <code>alt</code> (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because of the following reasons:
+        </p>
+        <ol>
+          <li>They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li>
+          <li>Something has gone wrong causing the image not to display. For example, try deliberately changing the path inside your <code>src</code> attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:</li>
+        </ol>
       </article>
   </section>
 
