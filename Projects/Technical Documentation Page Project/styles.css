@@ -163,6 +163,11 @@ img {
   padding: 5px;
 }
 
+.alt-image {
+ Height: auto;
+  width: 300px;
+}
+
 .note-card {
   padding-left: px;
   background-color: var(--font-color);
