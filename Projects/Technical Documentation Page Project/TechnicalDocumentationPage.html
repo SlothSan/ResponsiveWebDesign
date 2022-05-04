@@ -7,10 +7,10 @@
   <link type="css/text" rel="stylesheet" href=".styles.css" />
   <!--Import Comfortaa Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<!--Import Prettify.js -->
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!--Import Prettify.js -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <title>HTML Technical Documentation Page</title>
 </head>
 
@@ -26,6 +26,7 @@
       <li><a class="nav-link" href=#Anatomy_of_a_HTML_document>Anatomy of a HTML document</a></li>
       <li><a class="nav-link" href=#Images>Images</a></li>
       <li><a class="nav-link" href=#Marking_up_text>Marking up text</a></li>
+      <li><a class="nav-link" href=#Headings>Headings</a></li>
     </ul>
   </nav>
   <!--Nav Bar Ends Here-->
@@ -80,8 +81,8 @@
             </ol>
           <div class="note-card">
             <p>
-              <strong>Note</strong>
-              : Simple attribute values that don't contain ASCII whitespace (or any of the characters <code class="note-code">"</code> <code class="note-code">'</code> <code class="note-code">`</code> <code class="note-code">=</code> <code class="note-code"><</code> <code class="note-code">></code> ) can remain unquoted, but it is recommended that you quote all attribute values, as it makes your code more consistent and understandable.
+              <strong>Note: </strong>
+              Simple attribute values that don't contain ASCII whitespace (or any of the characters <code class="note-code">"</code> <code class="note-code">'</code> <code class="note-code">`</code> <code class="note-code">=</code> <code class="note-code"><</code> <code class="note-code">></code> ) can remain unquoted, but it is recommended that you quote all attribute values, as it makes your code more consistent and understandable.
             </p>
           </div>
           
@@ -196,29 +197,39 @@
       <p>
         This section will cover some of the essential HTML elements you'll use for marking up the text.
       </p>
-      <h4>Headings</h4>
-      <p>
-        Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <code>&lt;h1> - &lt;h6></code>, although you'll commonly only use 3 to 4 at most:
-      </p>
-      <pre class="prettyprint code-block">
-        &lt;!-- 4 heading levels: -->
-        &lt;h1>My main title&lt;/h1>
-        &lt;h2>My top level heading&lt;/h2>
-        &lt;h3>My subheading&lt;/h3>
-        &lt;h4>My sub-subheading&lt;/h4>
-      </pre>
-      <div class="note-card">
+      </article>
+    </section>
+    <section class="main-section" id="Headings">
+      <header class="headline">Headings</header>
+      <article>
         <p>
-          <strong>Note</strong>
-          Anything in HTML between <code class="note-code">&lt;!--</code> and <code class="note-code">--></code> is an <strong>HTML comment</strong>. The browser ignores comments as it renders the code. In other words, they are not visible on the page - just in the code. HTML comments are a way for you to write helpful notes about your code or logic.
+          Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <code>&lt;h1> - &lt;h6></code>, although you'll commonly only use 3 to 4 at most:
         </p>
-      </div>
-
-    </article>
-</section>
-
-
-  <!--Template for Articles
+        <pre class="prettyprint code-block">
+          &lt;!-- 4 heading levels: -->
+          &lt;h1>My main title&lt;/h1>
+          &lt;h2>My top level heading&lt;/h2>
+          &lt;h3>My subheading&lt;/h3>
+          &lt;h4>My sub-subheading&lt;/h4>
+        </pre>
+        <div class="note-card">
+          <p>
+            <strong>Note: </strong>
+            Anything in HTML between <code class="note-code">&lt;!--</code> and <code class="note-code">--></code> is an <strong>HTML comment</strong>. The browser ignores comments as it renders the code. In other words, they are not visible on the page - just in the code. HTML comments are a way for you to write helpful notes about your code or logic.
+          </p>
+        </div>
+        <p>
+          Now try adding a suitable title to your HTML page just above your <code>&lt;img></code> element.
+        </p>
+        <div class="note-card">
+          <p>
+            <strong>Note: </strong>
+            You'll see that your heading level 1 has an implicit style. Don't use heading elements to make text bigger or bold, because they are used for accessibility and other reasons such as SEO. Try to create a meaningful sequence of headings on your pages, without skipping levels.
+          </p>
+        </div>
+      </article>
+    </section>    
+   <!--Template for Articles
     <section class="main-section" id="">
         <header class="headline"></header>
         <article>
