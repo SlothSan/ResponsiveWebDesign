@@ -183,3 +183,61 @@ strong {
   font-weight: bold;
   font-style: italic;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    height: 190px;
+  }
+
+  #navbar {
+    background-color: var(--background-color);
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 270px;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+  
+  img {
+  height: auto;
+  width: 100%;
+}
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+  
+  nav li:last-child {
+  border: none;
+  border-top: 2px solid var(--font-color);
+}
+  
+ .note-card {
+  padding-left: px;
+  background-color: var(--font-color);
+  color: var(--background-color);
+  display: block;
+  width: 50%;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 0 auto;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
