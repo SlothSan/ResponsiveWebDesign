@@ -155,7 +155,7 @@ section article {
   margin: 5px;
   border-radius: 10px;
   width: auto;
-  border: 3px solid var(--font-color);
+  border: 2px solid var(--font-color);
 }
 
 img {
@@ -185,9 +185,12 @@ strong {
 }
 
 a {
-  text-decoration: none;
+  color: var(--font-color);
 }
 
+a:visited {
+  color: var(--font-color);
+}
 
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
