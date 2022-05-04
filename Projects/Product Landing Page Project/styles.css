@@ -128,9 +128,9 @@ header {
 }
 
 .logo-container > img {
-  width: 40vw;
+  width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 100px;
   max-height: 100px;
   margin-left: 30px;
   display: flex;
@@ -282,4 +282,8 @@ footer > span {
   font-size: 1rem;
   color: var(--background-color);
   padding-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* start of phone styles */
 }
