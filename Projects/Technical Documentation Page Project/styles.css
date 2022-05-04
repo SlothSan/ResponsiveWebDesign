@@ -17,6 +17,7 @@ pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
 pre.prettyprint, code.prettyprint {
 	background-color: #000;
 	border-radius: 8px;
+  border: 1px solid var(--font-color);
 }
 
 pre.prettyprint {
@@ -119,7 +120,6 @@ nav li:last-child {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 #main-doc .headline {
@@ -179,5 +179,6 @@ img {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: bold;
+  font-style: italic;
 }

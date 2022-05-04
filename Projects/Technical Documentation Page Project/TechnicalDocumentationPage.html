@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<!--Import Prettify.js -->
 <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <title>HTML Technical Documentation Page</title>
 </head>
@@ -21,8 +22,8 @@
       <li><a class="nav-link" href=#Introduction>Introduction</a></li>
       <li><a class="nav-link" href=#Anatomy_of_an_HTML_Element>Anatomy of an HTML Element</a></li>
       <li><a class="nav-link" href=#Nesting_elements>Nesting elements</a></li>
-      <li><a class="nav-link" href=#>Introduction</a></li>
-      <li><a class="nav-link" href=#>Introduction</a></li>
+      <li><a class="nav-link" href=#Empty_elements>Empty elements</a></li>
+      <li><a class="nav-link" href=#Anatomy_of_a_HTML_document>Anatomy of a HTML document</a></li>
     </ul>
   </nav>
   <!--Nav Bar Ends Here-->
@@ -107,7 +108,48 @@
         </article>
     </section>
     <hr>
-    <!--Template for Articles
+    <section class="main-section" id="Empty_elements">
+      <header class="headline">Empty elements</header>
+       <article>
+         <p>
+           Some elements have no content and are called <strong>empty elements</strong>. Take the <code>&lt;img></code> element that we already have in our HTML page:
+         </p>
+         <code class="prettyprint code-block">
+        &lt;img src="images/firefox-icon.png" alt="My test image">
+         </code>
+         <p>
+         This contains two attributes, but there is no closing </img> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.
+        </p>
+
+
+       </article>
+    </section>
+    <hr>
+    <section class="main-section" id="Anatomy_of_a_HTML_document">
+        <header class="headline">Anatomy of a HTML document</header>
+        <article>
+          <p>
+          That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page. Let's revisit the code we put into our <code>index.html</code> example (which we first met in the Dealing with files article):
+          </p>
+         <pre class="prettyprint code-block">
+         &lt;!DOCTYPE html>
+         &lt;html>
+           &lt;head>
+             &lt;meta charset="utf-8">
+             &lt;title>My test page&lt;/title>
+           &lt;/head>
+           &lt;body>
+             &lt;img src="images/firefox-icon.png" alt="My test image">
+           &lt;/body>
+         &lt;/html>
+         </pre>
+          <p>
+           Here, we have the following:
+          </p>
+
+        </article>
+    </section>
+  <!--Template for Articles
     <section class="main-section" id="">
         <header class="headline"></header>
         <article>
