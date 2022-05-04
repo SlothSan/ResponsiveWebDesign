@@ -57,8 +57,8 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 /*Ultimate Gray (#949398FF) & Illuminating (#F4DF4EFF)*/
 
 :root {
-    --background-color: #949398FF;
-    --font-color: #F4DF4EFF;
+    --background-color: #00203FFF;
+    --font-color: #ADEFD1FF;
 }
 
 body {
@@ -140,9 +140,12 @@ hr {
 section article {
     color: var(--font-color);
     margin: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-code {
+
+.code-block {
   display: block;
   position: relative;
   text-align: left;
@@ -151,4 +154,30 @@ code {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
+  width: auto;
+}
+*/
+img {
+  height: auto;
+  width: 50%;
+  padding: 5px;
+}
+
+.note-card {
+  padding-left: px;
+  background-color: var(--font-color);
+  color: var(--background-color);
+  display: block;
+  width: 50%;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.note-code {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+strong {
+  font-weight: 700;
 }
