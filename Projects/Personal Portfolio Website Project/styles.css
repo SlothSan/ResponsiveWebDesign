@@ -9,6 +9,7 @@ Neutral even lighter gray font2 #EFEFEF
 :root {
   --background-color: #FF3B3F;
   --font-color: #EFEFEF;
+  --background-color-alt: #CAEBF2;
 }
 /* reset base padding & margin */
 * {
@@ -28,9 +29,13 @@ Box Styling to remove margin / padding from elements to make them the same size 
 html {
   box-sizing: border-box;
   font-size: 100%; /*16px default font size */
-  scroll-behaviour: smooth; /* make scrolling for links smooth rather than jumping when clicked */
+  scroll-behavior: smooth; /* make scrolling for links smooth rather than jumping when clicked */
 }
 
+/* Body styling */
+
 /* Nav Styling */
+
+
 
 
