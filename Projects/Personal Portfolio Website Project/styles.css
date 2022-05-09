@@ -10,6 +10,7 @@ Neutral even lighter gray font2 #EFEFEF
   --background-color: #FF3B3F;
   --font-color: #EFEFEF;
   --background-color-alt: #CAEBF2;
+  --font-color-alt: #A9A9A9;
 }
 /* reset base padding & margin */
 * {
@@ -32,10 +33,47 @@ html {
   scroll-behavior: smooth; /* make scrolling for links smooth rather than jumping when clicked */
 }
 
-/* Body styling */
+/* Global Body styling */
+body {
+  line-height: 2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
 
 /* Nav Styling */
 
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  /*Fix navbar at top of viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-color);
+  z-index: 3;
+}
 
+.list-nav {
+  margin-right: 3rem;
+  display: flex;
+}
 
+.list-nav a {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.list-nav a:hover {
+  background: var(--background-color-alt);
+  color: var(--font-color-alt);
+}
 
