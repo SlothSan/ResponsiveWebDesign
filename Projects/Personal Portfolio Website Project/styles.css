@@ -1,5 +1,36 @@
-/* Declare Global Color Variables */
+/* Declare Global Color Variables 
+Sky Light Blue Background1 #CAEBF2
+Carbon Light Gray Font #A9A9A9
+WaterMelon light red background 2 #FF3B3F
+Neutral even lighter gray font2 #EFEFEF
+*/
+
 
 :root {
-
+  --background-color: #FF3B3F;
+  --font-color: #EFEFEF;
 }
+/* reset base padding & margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Set Box Sizing to Inherit throughout the webpage */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* html styling 
+Box Styling to remove margin / padding from elements to make them the same size consitently across the page. 
+*/
+html {
+  box-sizing: border-box;
+  font-size: 100%; /*16px default font size */
+  scroll-behaviour: smooth; /* make scrolling for links smooth rather than jumping when clicked */
+}
+
+/* Nav Styling */
+
+
