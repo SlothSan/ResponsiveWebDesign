@@ -1,0 +1,124 @@
+/* Add Variables */
+
+:root {
+    --background-blue: #14213D;
+    --font-orange: #FCA311;
+    --background-grey: #E5E5E5;
+  }
+  
+  /* Global styling */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    font-family: 'Space Mono', monospace;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.7;
+    color: var(--font-orange);
+  }
+  
+  
+  /* Nav Styling */
+  
+  #nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: var(--background-blue);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: var(--font-orange);
+  }
+  
+  #navbar ul {
+    list-style: none;
+  }
+  
+  #navbar a:hover {
+    background: var(--font-orange);
+    color: var(--background-blue);
+  }
+  
+  .navlist{
+    display: flex;
+  }
+  
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 2rem;
+    width: 100%;
+    background: var(--background-grey);
+    background-image: linear-gradient(var(--background-grey), var(--background-blue));
+    text-align: center;
+  }
+  
+   h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  #welcome-section p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  #projects {
+    background: var(--background-blue);
+    text-align: center;
+    padding: 4rem 4rem;
+  }
+  
+  .projects-header {
+    border-bottom: 0.1rem solid var(--font-orange);
+    margin: 0 auto 5rem auto;
+    width: 490px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  
+  .proj {
+    background: var(--background-grey);
+  }
+  
+  .image-project {
+    height: 1000px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
