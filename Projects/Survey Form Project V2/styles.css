@@ -1,88 +1,150 @@
-/* Green for submit button */
+body {
+  font-family: 'DM Serif Text', serif;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 10px;
+  text-align: center;
+}
 
-/*h1 {
-    color: #247881;
-    color: #43919B;
-    color: #30AADD;
-    color: #00FFC6;
-}*/
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  content: '';
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9c944db-eb99-47ff-8c32-f024a4b87abe/d6503dc-16882fad-dfc4-4ea8-8f58-f403cabe2a8e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I5Yzk0NGRiLWViOTktNDdmZi04YzMyLWYwMjRhNGI4N2FiZVwvZDY1MDNkYy0xNjg4MmZhZC1kZmM0LTRlYTgtOGY1OC1mNDAzY2FiZTJhOGUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HLXqZ6KuK8Dug0IskZG-wQrcqzwYa2WIdG65U6US0Qg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.container {
+  width: 45%;
+  margin: 3rem auto 0 auto;
+  background-color: rgba(58,136,124, 0.80);
+  padding: 10px;
+  border-radius: 20px;
+  border-color: rgb(213,220,220, 0.80);
+  border-style: solid;
+}
+
+#title {
+  margin-bottom: -10px;
+  text-shadow: 1px 1px black;
+}
+
+#description {
+  font-style: oblique;
+  text-shadow: 1px 1px black;
+}
 
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-color: #3b4a9d;
-    color: #e8d3a3;
-    font-size: 16px;
-    font-family: DM-Serif-Text, serif;
+  background-color: rgba(58,136,124, 0.80);
 }
 
-h1, p {
-    margin: 1em auto;
-    text-align: center;
+#survey-form {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: rgba(58,136,124, 0.80);
+  border-radius: 20px;
+  border-color: rgb(213,220,220, 0.80);
+  border-style: solid;
 }
 
-p {
-    font-size: 20px;
+input {
+  font-family: 'DM Serif Text', serif;
+  font-size: 0.9rem;
 }
 
-form {
-    width: 65vw;
-    max-width: 600px;
-    min-width: 350px;
-    margin: 0 auto;
-    padding-bottom: 1em;
+.input-radio{
+  display:inline-block;
+  text-align: center;
 }
 
-fieldset {
-    border: none;
-    padding: 2rem 0;
-}
-
-fieldset:not(:last-of-type) {
-    border-bottom: 3px solid #3b3b4f;
-}
-
-label {
-    display: block;
-      margin: 0.5rem 0;
-}
-  
-input,
-textarea,
 select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
+  font-family: inherit;
+  color: #527462;
 }
 
-input, textarea {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-  }
-  
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
-    min-width: 300px;
-  }
-  
-  input[type="file"] {
-    padding: 1px 2px;
-  }
-  
-  a {
-    color: #dfdfe2
-  }
+.checkboxgroup {
+  display: inline-block;
+  text-align: center;
+  padding-left: 20px;
+}
+
+#service-label {
+  display: block;
+}
+
+#name-label {
+  display: block;
+  text-align: center;
+}
+
+#email-label {
+  display: block;
+  text-align: center;
+}
+
+#number-label {
+  display: block;
+  text-align: center;
+}
+
+#checkbox-label {
+  display: block;
+  text-align: center;
+}
+
+
+#input-checkbox {
+  display: flex;
+}
+
+.form-group {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+padding-top: 3px;  
+}
+
+.input-textarea {
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  font-family: inherit;
+  font-size: inherit;
+  color: #527462;
+}
+
+.form-control {
+  margin-top: 5px;
+}
+
+.form-control:focus {
+  border-color: #527462;
+  outline: 0;
+  box-shadow: 0 0 0 1rem rgba(82, 116, 98, 0.25);
+}
+
+.submit {
+  font-family: inherit;
+  margin-top: 5px;
+  background-color: rgba(58,136,124, 0.80);
+  color: white;
+  border-color:  rgb(213,220,220, 0.80);
+}
+
+
+
+
+
+
