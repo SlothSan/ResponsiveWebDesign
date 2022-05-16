@@ -1,124 +1,248 @@
 /* Add Variables */
 
 :root {
-    --background-blue: #14213D;
-    --font-orange: #FCA311;
-    --background-grey: #E5E5E5;
-  }
-  
-  /* Global styling */
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  html {
-    font-size: 1rem;
-    scroll-behavior: smooth;
-    font-family: 'Space Mono', monospace;
-    box-sizing: border-box;
-  }
-  
-  body {
-    line-height: 1.7;
-    color: var(--font-orange);
-  }
-  
-  
-  /* Nav Styling */
-  
-  #nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background: var(--background-blue);
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  #navbar a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-    color: var(--font-orange);
-  }
-  
-  #navbar ul {
-    list-style: none;
-  }
-  
-  #navbar a:hover {
-    background: var(--font-orange);
-    color: var(--background-blue);
-  }
-  
-  .navlist{
-    display: flex;
-  }
-  
-  
-  #welcome-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 2rem;
-    width: 100%;
-    background: var(--background-grey);
-    background-image: linear-gradient(var(--background-grey), var(--background-blue));
-    text-align: center;
-  }
-  
-   h1 {
-    font-size: 3rem;
-  }
-  
-  h2 {
-    font-size: 1.2rem;
-  }
-  #welcome-section p {
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 400;
-  }
-  
-  #projects {
-    background: var(--background-blue);
-    text-align: center;
-    padding: 4rem 4rem;
-  }
-  
-  .projects-header {
-    border-bottom: 0.1rem solid var(--font-orange);
-    margin: 0 auto 5rem auto;
-    width: 490px;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    max-width: 1000px;
-    width: 100%;
+  --background-blue: #14213D;
+  --font-orange: #FCA311;
+  --background-grey: #E5E5E5;
+}
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+  font-family: 'Space Mono', monospace;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7;
+  color: var(--font-orange);
+}
+
+
+/* Nav Styling */
+
+#nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: var(--background-blue);
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.05rem solid var(--font-orange);
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: var(--font-orange);
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar a:hover {
+  background: var(--font-orange);
+  color: var(--background-blue);
+}
+
+.navlist{
+  display: flex;
+}
+
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 2rem;
+  width: 100%;
+  background: var(--background-grey);
+  background-image: linear-gradient(var(--background-grey), var(--background-blue));
+  text-align: center;
+}
+
+ h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+#welcome-section p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#projects {
+  background: var(--background-blue);
+  text-align: center;
+  padding: 4rem 4rem;
+  height: 100%;
+  background-image: linear-gradient(var(--background-blue) 55%, var(--background-grey));
+}
+
+.projects-header {
+  border-bottom: 0.1rem solid var(--font-orange);
+  margin: 0 auto 5rem auto;
+  width: 490px;
+}
+
+@media (max-width: 490px) {
+  .projects-header h2 p  {
+    max-width: 245px;
+    width: 100vw;
     margin: 0 auto;
-    margin-bottom: 5rem;
+    font-size: 1rem;
   }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  align-items: stretch;
+  grid-gap: 1rem;
   
-  .proj {
-    background: var(--background-grey);
+}
+
+.proj {
+  background: var(--background-grey);
+
+}
+
+.title-project {
+  background: var (--background-grey);
+  height: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 2rem;
+  color: var(--background-blue);
+}
+
+.title-project:hover {
+  background: var(--background-blue);
+  color: var(--font-orange);
+  border: 0.1rem solid var(--font-orange);
+}
+
+.image-project {
+  width: 100%;
+  height: 333px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.btn-show-all {
+  font-size: 1.5rem;
+  background: var(--background-grey);
+  transition: background 0.3s ease-out;
+  color: var(--background-blue);
+}
+
+.btn-show-all:hover {
+  background: var(--background-blue);
+  color: var(--font-orange);
+}
+
+.btn-show-all:hover > i  {
+  transform: translateX(2px);
+}
+
+ 
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+}
+
+
+
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+  background: var(--background-grey);
+}
+
+.contact-header {
+  color: var(--background-blue);
+}
+
+.contact-header h2 {
+  font-size: 3rem;
+}
+
+.contact-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  padding-top: 2rem;
+}
+
+.contact-details:hover {
+  transform: translateZ(8px);
+  background: var(--background-blue);
+  color: var(--font-orange);
+  border-radius: 20px;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--background-blue);
+  border-top: 0.1rem solid var(--font-orange);
+  color: var(--font-orange);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 460px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .image-project {
-    height: 1000px;
-    width: 100%;
-    object-fit: cover;
-  }
-  
+}
